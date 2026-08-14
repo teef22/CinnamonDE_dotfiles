@@ -1,0 +1,130 @@
+[/]
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:1:systray@cinnamon.org:3', 'panel1:right:7:xapp-status@cinnamon.org:4', 'panel1:right:3:notifications@cinnamon.org:5', 'panel1:right:4:removable-drives@cinnamon.org:7', 'panel1:right:6:keyboard@cinnamon.org:8', 'panel1:right:5:favorites@cinnamon.org:9', 'panel1:right:8:network@cinnamon.org:10', 'panel1:right:9:sound@cinnamon.org:11', 'panel1:right:11:power@cinnamon.org:12', 'panel1:right:13:calendar@cinnamon.org:13', 'panel1:right:14:cornerbar@cinnamon.org:14', 'panel1:center:0:workspace-switcher@cinnamon.org:15', 'panel1:right:0:temperature@fevimu:16', 'panel1:right:2:spacer@cinnamon.org:17', 'panel1:right:10:spacer@cinnamon.org:18', 'panel1:right:12:spacer@cinnamon.org:19']
+next-applet-id=20
+no-adjacent-panel-barriers=false
+panel-edit-mode=false
+panel-zone-icon-sizes='[{"panelId":1,"left":0,"center":0,"right":24}]'
+panel-zone-symbolic-icon-sizes='[{"panelId":1,"left":28,"center":28,"right":16}]'
+panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
+panels-autohide=['1:false', '2:false']
+panels-enabled=['1:0:bottom']
+panels-height=['1:40', '2:40']
+panels-hide-delay=['1:0', '2:0']
+panels-show-delay=['1:0', '2:0']
+workspace-expo-view-as-grid=true
+workspace-osd-visible=true
+
+[desktop/applications/calculator]
+exec='galculator'
+
+[desktop/applications/terminal]
+exec='/usr/bin/ghostty --gtk-single-instance=true'
+exec-arg='--'
+
+[desktop/input-sources]
+show-all-sources=false
+sources=[('xkb', 'us'), ('xkb', 'ua')]
+xkb-options=['caps:none']
+
+[desktop/interface]
+clock-show-date=false
+clock-show-seconds=false
+cursor-blink-time=1200
+cursor-size=24
+first-day-of-week=1
+keyboard-layout-prefer-variant-names=false
+keyboard-layout-show-flags=false
+text-scaling-factor=1.0
+toolkit-accessibility=false
+
+[desktop/keybindings/media-keys]
+terminal=['<Primary><Alt>e']
+
+[desktop/keybindings/wm]
+move-to-workspace-1=['<Super><Shift>1', '<Super><Shift>KP_1']
+move-to-workspace-10=['<Super><Shift>0', '<Super><Shift>KP_0']
+move-to-workspace-2=['<Super><Shift>2', '<Super><Shift>KP_2']
+move-to-workspace-3=['<Super><Shift>3', '<Super><Shift>KP_3']
+move-to-workspace-4=['<Super><Shift>4', '<Super><Shift>KP_4']
+move-to-workspace-5=['<Super><Shift>5', '<Super><Shift>KP_5']
+move-to-workspace-6=['<Super><Shift>6', '<Super><Shift>KP_6']
+move-to-workspace-7=['<Super><Shift>7', '<Super><Shift>KP_7']
+move-to-workspace-8=['<Super><Shift>8', '<Super><Shift>KP_8']
+move-to-workspace-9=['<Super><Shift>9', '<Super><Shift>KP_9']
+move-to-workspace-left=@as []
+move-to-workspace-right=@as []
+switch-to-workspace-1=['<Super>1', '<Super>KP_1']
+switch-to-workspace-10=['<Super>0', '<Super>KP_0']
+switch-to-workspace-2=['<Super>2', '<Super>KP_2']
+switch-to-workspace-3=['<Super>3', '<Super>KP_3']
+switch-to-workspace-4=['<Super>4', '<Super>KP_4']
+switch-to-workspace-5=['<Super>5', '<Super>KP_5']
+switch-to-workspace-6=['<Super>6', '<Super>KP_6']
+switch-to-workspace-7=['<Super>7', '<Super>KP_7']
+switch-to-workspace-8=['<Super>8', '<Super>KP_8']
+switch-to-workspace-9=['<Super>9', '<Super>KP_9']
+switch-to-workspace-down=['<Control><Alt>Down', '<Super>Tab']
+switch-to-workspace-left=@as []
+switch-to-workspace-right=@as []
+switch-to-workspace-up=['<Control><Alt>Up', '<Shift><Super>Tab']
+
+[desktop/media-handling]
+autorun-never=false
+
+[desktop/peripherals/keyboard]
+delay=uint32 250
+numlock-state=true
+repeat-interval=uint32 19
+
+[desktop/peripherals/mouse]
+double-click=400
+drag-threshold=8
+speed=0.0
+
+[desktop/peripherals/touchpad]
+disable-while-typing=false
+speed=0.0
+
+[desktop/screensaver]
+layout-group=0
+
+[desktop/sound]
+event-sounds=false
+
+[desktop/wm/preferences]
+num-workspaces=5
+workspace-names=@as []
+
+[gestures]
+swipe-down-2='PUSH_TILE_DOWN::end'
+swipe-down-3='TOGGLE_OVERVIEW::end'
+swipe-down-4='VOLUME_DOWN::end'
+swipe-left-2='PUSH_TILE_LEFT::end'
+swipe-left-3='WORKSPACE_NEXT::end'
+swipe-left-4='WINDOW_WORKSPACE_PREVIOUS::end'
+swipe-right-2='PUSH_TILE_RIGHT::end'
+swipe-right-3='WORKSPACE_PREVIOUS::end'
+swipe-right-4='WINDOW_WORKSPACE_NEXT::end'
+swipe-up-2='PUSH_TILE_UP::end'
+swipe-up-3='TOGGLE_EXPO::end'
+swipe-up-4='VOLUME_UP::end'
+tap-3='MEDIA_PLAY_PAUSE::end'
+
+[muffin]
+dynamic-workspaces=false
+workspace-cycle=false
+
+[settings-daemon/peripherals/touchscreen]
+orientation-lock=true
+
+[settings-daemon/plugins/color]
+night-light-last-coordinates=(50.433332999999998, 30.516667000000002)
+night-light-temperature=uint32 2700
+
+[settings-daemon/plugins/power]
+lid-close-ac-action='suspend'
+lid-close-battery-action='suspend'
+sleep-display-ac=1800
+sleep-display-battery=1800
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=0
