@@ -1,5 +1,5 @@
 ## Setup guide
-Put this repo to `.config/dconf`.
+Put this repo to `~/.config/dconf`.
 
 To apply configs from `cinnamon.dump` to your Cinnamon DE in use run:
 ```zsh
