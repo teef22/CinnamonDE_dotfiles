@@ -1,14 +1,15 @@
 [/]
+alttab-switcher-delay=100
 enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:0:systray@cinnamon.org:3', 'panel1:right:5:xapp-status@cinnamon.org:4', 'panel1:right:1:notifications@cinnamon.org:5', 'panel1:right:11:removable-drives@cinnamon.org:7', 'panel1:right:7:keyboard@cinnamon.org:8', 'panel1:right:3:favorites@cinnamon.org:9', 'panel1:right:10:network@cinnamon.org:10', 'panel1:right:9:sound@cinnamon.org:11', 'panel1:right:13:power@cinnamon.org:12', 'panel1:right:15:calendar@cinnamon.org:13', 'panel1:right:17:cornerbar@cinnamon.org:14', 'panel1:center:0:workspace-switcher@cinnamon.org:15', 'panel1:right:12:spacer@cinnamon.org:18', 'panel1:right:14:spacer@cinnamon.org:19', 'panel1:right:16:spacer@cinnamon.org:20', 'panel1:right:6:spacer@cinnamon.org:21', 'panel1:right:4:spacer@cinnamon.org:22', 'panel1:right:2:spacer@cinnamon.org:23']
 next-applet-id=24
 no-adjacent-panel-barriers=false
 panel-edit-mode=false
 panel-zone-icon-sizes='[{"panelId":1,"left":0,"center":0,"right":24}]'
-panel-zone-symbolic-icon-sizes='[{"panelId":1,"left":28,"center":28,"right":16}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
 panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
 panels-autohide=['1:false', '2:false']
 panels-enabled=['1:0:bottom']
-panels-height=['1:40', '2:40']
+panels-height=['1:30', '2:40']
 panels-hide-delay=['1:0', '2:0']
 panels-show-delay=['1:0', '2:0']
 workspace-expo-view-as-grid=true
@@ -22,6 +23,7 @@ exec='/usr/bin/ghostty --gtk-single-instance=true'
 exec-arg='--'
 
 [desktop/input-sources]
+current=uint32 0
 show-all-sources=false
 sources=[('xkb', 'us'), ('xkb', 'ua')]
 xkb-options=['caps:none']
@@ -39,6 +41,7 @@ toolkit-accessibility=false
 
 [desktop/keybindings/media-keys]
 terminal=['<Primary><Alt>e']
+video-rotation-lock=@as []
 
 [desktop/keybindings/wm]
 move-to-workspace-1=['<Super><Shift>1', '<Super><Shift>KP_1']
@@ -92,6 +95,8 @@ layout-group=0
 event-sounds=false
 
 [desktop/wm/preferences]
+min-window-opacity=30
+mouse-button-modifier=''
 num-workspaces=5
 workspace-names=@as []
 
@@ -111,7 +116,9 @@ swipe-up-4='VOLUME_UP::end'
 tap-3='MEDIA_PLAY_PAUSE::end'
 
 [muffin]
+draggable-border-width=10
 dynamic-workspaces=false
+experimental-features=@as []
 workspace-cycle=false
 
 [settings-daemon/peripherals/touchscreen]
