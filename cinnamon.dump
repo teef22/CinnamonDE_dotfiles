@@ -90,6 +90,10 @@ speed=0.0
 
 [desktop/screensaver]
 layout-group=0
+lock-delay=uint32 10
+
+[desktop/session]
+idle-delay=uint32 0
 
 [desktop/sound]
 event-sounds=false
@@ -130,8 +134,10 @@ night-light-temperature=uint32 2700
 
 [settings-daemon/plugins/power]
 button-power='nothing'
+idle-dim-battery=false
 lid-close-ac-action='suspend'
 lid-close-battery-action='suspend'
+lock-on-suspend=true
 sleep-display-ac=1800
 sleep-display-battery=1800
 sleep-inactive-ac-timeout=0
